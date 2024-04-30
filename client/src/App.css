@@ -1,0 +1,190 @@
+.App {
+  text-align: center;
+  height: 98bvh;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+#heading {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #202b70;
+  color: white;
+  border-radius: 35px;
+  padding: 5px 35px;
+  transition: all 0.5s ease;
+  text-shadow: 0px 0px 10px black;
+  box-shadow: 5px 8px 10px rgb(0, 0, 0);
+}
+#heading:hover {
+  background-color: #8c7a95be;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px white;
+  text-decoration: underline;
+  padding: 5px 65px;
+  text-shadow: 6px 6px 10px rgb(0, 0, 0);
+}
+
+.App-header {
+  background-color: #33123eb6;
+  min-height: 100bvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-shadow: 5px 6px 7px black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-footer {
+  height: 100%;
+  display: block;
+}
+
+.kllogo {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 100px;
+  padding-bottom: 4px;
+}
+
+.heading-text {
+  transition: all 01s ease;
+}
+
+.data-ol {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  margin: 0px 0px;
+  background-color: aliceblue;
+  color: black;
+  padding: 30px 0px;
+}
+.data-li {
+  background-color: #202b70;
+  color: antiquewhite;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 30px 50px;
+  aspect-ratio: 16/10;
+  height: 250px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.data-li:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 20px 50px black,
+    inset 0px 10px 15px rgba(227, 218, 210, 0.424);
+}
+#deletebutton,
+#deleteall {
+  width: max-content;
+  padding: 10px 20px;
+  background-color: #636786;
+  color: white;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 1px rgb(185, 144, 144);
+  border: white 1px solid;
+}
+#deletebutton:hover,
+#deleteall:hover {
+  transform: scale(1.1) translate(-2px, -1px);
+  box-shadow: 2px 2px 10px rgb(185, 144, 144);
+  background-color: aliceblue;
+  color: #33123eb6;
+}
+#deletebutton:active,
+#deleteall:active {
+  opacity: 0.8;
+  transform: scale(1) translate(0px, 0px);
+}
+#deletebutton {
+  background-color: aliceblue;
+  color: #33123eb6;
+  margin-top: auto;
+}
+#deletebutton:hover {
+  background-color: #636786;
+  color: white;
+}
+.data-div {
+  margin-top: 30px;
+  color: aliceblue;
+}
+.cursor,
+.del-all-cursor {
+  cursor: pointer;
+  border-top: #61dafb 5px solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  animation-name: rotate;
+  animation: spin linear infinite 0.7s;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50% !important;
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  padding: 2.5%;
+}
+#userFound {
+  font-size: 0.95rem;
+  margin: 0;
+  padding: 0;
+  color: #ad1616e2;
+  /* text-align: start; */
+  display: block;
+  width: max-content;
+}
